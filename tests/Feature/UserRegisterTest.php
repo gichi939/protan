@@ -14,16 +14,16 @@ class UserRegisterTest extends TestCase
      *
      * @return void
      */
-    public function test_register()
-    {
-        $email = 'email@example.com';
-        $this->post(route('register'), [
-            'name' => 'user',
-            'email' => $email,
-            'password' => 'password',
-            'password_confirmation' => 'password'
-        ])
-            ->assertStatus(302);
-        $this->assertDatabaseHas('users', ['email' => $email]);
-    }
+    // public function test_register()
+    // {
+    //     $email = 'email@example.com';
+    //     $this->post(route('register'), [
+    //         'name' => 'user',
+    //         'email' => $email,
+    //         'password' => 'password',
+    //         'password_confirmation' => 'password'
+    //     ])
+    //         ->assertStatus(302);
+    //     $this->assertDatabaseHas('users', ['email' => $email]);
+    // }
 }
