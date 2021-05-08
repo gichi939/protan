@@ -35,7 +35,7 @@ return [
 
     'connections' => [
 
-        'circle_test' => [
+        'protan' => [
             'driver' => 'mysql',
             'host' => '127.0.0.1',
             'port' => '3306',
