@@ -19,7 +19,7 @@ jobs:
       - APP_DEBUG: true
       - APP_ENV: testing
       - APP_KEY: base64:/GXwYjs6KsGM6FSj9W1oyBbd7bLe69zLoSSxrUPFpB4=
-      - DB_CONNECTION: pro_tan
+      - DB_CONNECTION: protan
       - MYSQL_ALLOW_EMPTY_PASSWORD: true
 
     working_directory: ~/repo
