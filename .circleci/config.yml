@@ -20,12 +20,9 @@ jobs:
       - APP_ENV: testing
       - APP_KEY: base64:/GXwYjs6KsGM6FSj9W1oyBbd7bLe69zLoSSxrUPFpB4=
       - DB_CONNECTION: protan
-      - DB_DATABASE: protan
-      - DB_USERNAME: root
-      - DB_PASSWORD: secrert
       - MYSQL_ALLOW_EMPTY_PASSWORD: true
 
-    working_directory: ~/protan
+    working_directory: ~/repo
 
     steps:
       - checkout
@@ -48,7 +45,6 @@ jobs:
           key: v1-dependencies-{{ checksum "composer.json" }}
 
       # run seeding
-      - run: php artisan migrate
       - run: php artisan db:seed
 
       # run tests!
