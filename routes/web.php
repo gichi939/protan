@@ -24,3 +24,5 @@ Route::get('/', function () {
 
 Route::post('/register', 'Auth\RegisterController@register')->name('register');
 
+route::get('/', 'maincontroller@show')->name('top_show');
+
