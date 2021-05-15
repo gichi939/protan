@@ -101,7 +101,7 @@ opacity: 1;
 /*========= ボタンのためのCSS ===============*/
 .openbtn1{
   position:fixed;
-  top:10px;
+  top:0px;
   right: 10px;
   z-index: 9999;/*ボタンを最前面に*/
   cursor: pointer;
