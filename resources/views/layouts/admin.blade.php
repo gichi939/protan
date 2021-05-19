@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
 
     <!-- jQuery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -64,7 +65,6 @@
                         <ul class="navbar-nav ml-auto">
                             <div class="openbtn1"><span></span><span></span><span></span></div>
                             <nav id="g-nav">
-                                    <!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
                                     <ul>
                                         <li><a href="#">Top</a></li>
                                         <li><a href="#">About</a></li>
@@ -81,6 +81,9 @@
             </div>
         </div>
     </div>
+    <main>
+        @yield('content')
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </body>
