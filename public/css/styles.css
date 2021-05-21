@@ -38,7 +38,7 @@
 /* 共通 */
 html {
   font-size: 62.5%;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: sans-serif;
   width: 100%;
 }
 
@@ -46,17 +46,23 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #2b546a;
+}
+
 body {
-  color: #222;
+  color: #2b546a;
   font-family: 'Noto Sans JP', sans-serif, 'Noto Serif JP', serif;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: normal;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   letter-spacing: 0.025em;
   margin: 0 auto;
   background-color: #f9fbfe;
 }
+
 
 .liked {
   color: pink;
@@ -89,10 +95,11 @@ body {
   background-color: rgb(255, 255, 255);
   display: inline-block;
   height: 400px;
+  padding: 0px;
 }
 
 .course-image {
-  margin: 0 102.5px;
+  margin: 0 117.5px;
 }
 
 
@@ -106,6 +113,12 @@ body {
   text-align: center;
   margin-top: 15px;
   font-size: 2rem;
+}
+
+.cource-link {
+  cursor: pointer;
+  color: #2b546a;
+  text-decoration: none;
 }
 
 
