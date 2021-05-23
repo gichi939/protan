@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
-    @yield('styles')
+    <link rel="stylesheet" href="{{ asset('css/html.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
 
     <!-- jQuery読み込み -->
@@ -66,17 +66,17 @@
                         <ul class="navbar-nav ml-auto">
                             <div class="openbtn1"><span></span><span></span><span></span></div>
                             <nav id="g-nav">
-                                    <ul>
-                                        <li><a href="#">Top</a></li>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Service</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                    </ul>
+                                <ul>
+                                    <li><a href="#">Top</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Service</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
                             </nav>
                             <div class="circle-bg"></div>
                             <!-- Authentication Links -->
                         </ul>
-                        
+
                     </div>
                 </nav>
             </div>

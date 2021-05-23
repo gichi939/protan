@@ -1,8 +1,6 @@
 @extends('layouts.admin')
 
-@section('styles')
-<link rel="stylesheet" href="{{ asset('css/html.css') }}">
-@endsection
+
 
 @section('title', 'html_langage')
 
