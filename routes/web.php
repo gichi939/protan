@@ -24,5 +24,7 @@ Route::get('/', function () {
 
 Route::post('/register', 'Auth\RegisterController@register')->name('register');
 
-route::get('/', 'MainController@show')->name('top_show');
+route::get('/', 'MainController@show')->name('top.show');
+
+route::get('/html/index', 'HtmlController@show')->name('html.show');
 

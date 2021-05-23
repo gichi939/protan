@@ -1,0 +1,37 @@
+.word-list {
+    background-color: #001e43;
+    width: 230px;
+    height: 910px;
+    overflow: scroll;
+}
+
+.word-select {
+    background-color: #fff;
+    width: 215px;
+    height: 50px;
+    margin: 10px auto;
+    list-style: none;
+}
+
+.word {
+    line-height: 50px;
+    text-align: center;
+}
+
+
+.main-word-area {
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    border: solid;}
+
+.main-word {
+line-height: 255px;
+text-align: center;
+color: black;
+}
+
+.main-word p {
+    font-size: 10rem;
+}

@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+    @yield('styles')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
 
     <!-- jQuery読み込み -->
