@@ -81,70 +81,61 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/nav.js":
-/*!*****************************!*\
-  !*** ./resources/js/nav.js ***!
-  \*****************************/
+/***/ "./resources/js/html.js":
+/*!******************************!*\
+  !*** ./resources/js/html.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-$(".openbtn1").click(function () {
-  //ボタンがクリックされたら
-  openMenu(this);
-});
-$("#g-nav a").click(function () {
-  //ナビゲーションのリンクがクリックされたら
-  closeMenu();
-}); //   $("body").click(function () {//ナビゲーションのリンクがクリックされたら
-//     if ($(".openbtn1").attr("class") == "openbtn1 active") {
-//         $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
-//         $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去
-//         $("#g-ul").removeClass('ul_active');
-//         $(".circle-bg").removeClass('circleactive');//丸背景のcircleactiveクラスを除去
-//     }
-// });
-
-$(".circle-bg").hover(function () {// hover on
-}, function () {
-  // hover off
-  closeMenu();
-});
-
-function openMenu(element) {
-  $(element).toggleClass('active'); //ボタン自身に activeクラスを付与し
-
-  $("#g-nav").toggleClass('panelactive'); //ナビゲーションにpanelactiveクラスを付与
-
-  $("#g-ul").toggleClass('ul_active');
-  $(".circle-bg").toggleClass('circleactive'); //丸背景にcircleactiveクラスを付与
-}
-
-function closeMenu() {
-  $(".openbtn1").removeClass('active'); //ボタンの activeクラスを除去し
-
-  $("#g-nav").removeClass('panelactive'); //ナビゲーションのpanelactiveクラスを除去
-
-  $("#g-ul").removeClass('ul_active');
-  $(".circle-bg").removeClass('circleactive'); //丸背景のcircleactiveクラスを除去
+function WordClic0() {
+  document.getElementById('edit_area').innerHTML = "div";
+  var wordmean = document.getElementById("txt-hide");
+  wordmean.innerHTML = '分割する<br>divはdivided（分割する）という単語が由来となっています。';
+  var prgmean = document.getElementById("prg-hide");
+  prgmean.innerHTML = '分割テキスト（左・中央・右揃え)'; // document.getElementById('txt-hide').style.display = "none" ;
+  // document.getElementById('prg-hide').style.display = "none" ;
 }
 
 ;
 
+function WordClic1() {
+  document.getElementById('edit_area').innerHTML = "h1";
+  var pElement = document.getElementById("txt-hide");
+  pElement.innerHTML = 'h1';
+  var prgmean = document.getElementById("prg-hide");
+  prgmean.innerHTML = 'hはheadingの頭文字で文章中の見出しを表します';
+}
+
+;
+$(".more").on("click", function () {
+  $(".more").toggleClass("on-click");
+  $("#txt-hide").slideToggle(100);
+});
+$(".prg-more").on("click", function () {
+  $(".prg-more").toggleClass("on-click");
+  $("#prg-hide").slideToggle(100);
+});
+var button = document.getElementById('wordNumber0');
+button.onclick = WordClic0;
+var button2 = document.getElementById('wordNumber1');
+button2.onclick = WordClic1;
+
 /***/ }),
 
-/***/ 1:
-/*!***********************************!*\
-  !*** multi ./resources/js/nav.js ***!
-  \***********************************/
+/***/ 2:
+/*!************************************!*\
+  !*** multi ./resources/js/html.js ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/gichi939/Pro_Tan/resources/js/nav.js */"./resources/js/nav.js");
+module.exports = __webpack_require__(/*! /Users/gichi939/Pro_Tan/resources/js/html.js */"./resources/js/html.js");
 
 
 /***/ })

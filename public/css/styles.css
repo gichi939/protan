@@ -70,7 +70,9 @@ body {
 
 /* hedder */
 .navbar {
+  position: fixed;
   height: 50px;
+  z-index: 1;
 }
 
 .navbar-brand {

@@ -66,7 +66,7 @@
                         <ul class="navbar-nav ml-auto">
                             <div class="openbtn1"><span></span><span></span><span></span></div>
                             <nav id="g-nav">
-                                <ul>
+                                <ul id="g-ul">
                                     <li><a href="#">Top</a></li>
                                     <li><a href="#">About</a></li>
                                     <li><a href="#">Service</a></li>

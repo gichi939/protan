@@ -10,4 +10,9 @@ class MainController extends Controller
     {
         return view('top/index');
     }
+
+    // public function test()
+    // {
+    //     return view('page');
+    // }
 }

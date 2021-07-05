@@ -136,6 +136,11 @@ return [
 
     'providers' => [
 
+        /**
+         * Auth0
+         */
+        Auth0\Login\LoginServiceProvider::class,
+
         /*
          * Laravel Framework Service Providers...
          */
@@ -190,6 +195,11 @@ return [
     */
 
     'aliases' => [
+
+        /**
+         * Auth0
+         */
+        'Auth0' => Auth0\Login\Facade\Auth0::class,
 
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,

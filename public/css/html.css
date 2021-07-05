@@ -3,6 +3,7 @@
     width: 230px;
     height: 910px;
     overflow: scroll;
+    margin-top: 80px;
 }
 
 .word-select {
@@ -23,8 +24,9 @@
     background-color: #fff;
     width: 300px;
     height: 300px;
-    margin-top: 100px;
-    border: solid;}
+    margin-top: 80px;
+    border: solid;
+}
 
 .main-word {
 line-height: 255px;
@@ -34,4 +36,52 @@ color: black;
 
 .main-word p {
     font-size: 10rem;
+}
+
+.word-mean {
+    background-color: cornsilk;
+    margin-top: 50px;
+}
+
+.word-mean p {
+    text-align: center;
+    padding: 15px 0;
+}
+
+#txt-hide{
+    display: none;
+}
+
+#prg-hide{
+    display: none;
+}
+
+p.more {
+    transition: .1s;
+    -erbkit-transition: .1s;
+}
+
+p.prg-more {
+    transition: .1s;
+    -erbkit-transition: .1s;
+}
+    
+p.more::after {
+    content: "意味を見る";
+    transition: .1s;
+    -erbkit-transition: .1s;
+}
+
+p.more.on-click::after{
+    content: "閉じる";
+}
+
+p.prg-more::after {
+    content: "プログラミングの使い方を見る";
+    transition: .1s;
+    -erbkit-transition: .1s;
+}
+
+p.prg-more.on-click::after{
+    content: "閉じる";
 }

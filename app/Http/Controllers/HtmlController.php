@@ -8,6 +8,9 @@ class HtmlController extends Controller
 {
     public function show() 
     {
-        return view('html/index');
+        $words = array();
+        $words = ["div","h1","ul","li","a","img","class","id",9];
+        
+        return view('html/index')->with('words',$words);
     }
 }

@@ -24,7 +24,11 @@ Route::get('/', function () {
 
 Route::post('/register', 'Auth\RegisterController@register')->name('register');
 
-route::get('/', 'MainController@show')->name('top.show');
+// route::get('/', 'MainController@show')->name('top.show');
 
 route::get('/html/index', 'HtmlController@show')->name('html.show');
 
+Route::get( '/auth0/callback', '\Auth0\Login\Auth0Controller@callback' )->name( 'auth0-callback' );
+
+Route::get('/login', 'Auth0\Auth0IndexController@login' )->name( 'login' );
+Route::get('/logout', 'Auth0\Auth0IndexController@logout' )->name( 'logout' )->middleware('auth');
