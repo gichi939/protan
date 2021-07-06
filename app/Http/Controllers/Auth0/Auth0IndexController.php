@@ -14,12 +14,16 @@ class Auth0IndexController extends Controller
      */
     public function login()
     {
-        $authorize_params = [
-            'scope' => 'openid email email_verified',
-            // Use the key below to get an Access Token for your API.
-            // 'audience' => config('laravel-auth0.api_identifier'),
-        ];
-        return App::make('auth0')->login(null, null, $authorize_params);
+        if (Auth::check()) {
+            return redirect()->intended('/');
+        }
+
+        return App::make('auth0')->login(
+            null,
+            null,
+            ['scope' => 'openid name email email_verified'],
+            'code'
+        );
     }
 
     /**
