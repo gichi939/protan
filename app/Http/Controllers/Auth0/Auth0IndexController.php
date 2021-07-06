@@ -14,9 +14,7 @@ class Auth0IndexController extends Controller
      */
     public function login()
     {
-        if (Auth::check()) {
-            return redirect()->intended('/');
-        }
+
 
         return App::make('auth0')->login(
             null,
