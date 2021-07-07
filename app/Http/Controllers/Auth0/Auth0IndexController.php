@@ -12,7 +12,7 @@ class Auth0IndexController extends Controller
      * 
      * @return mixed
      */
-    public function login()
+    public static function login()
     {
         $authorize_params = [
             'scope' => 'openid email email_verified',
