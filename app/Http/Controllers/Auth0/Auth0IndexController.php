@@ -37,4 +37,16 @@ class Auth0IndexController extends Controller
             env('APP_URL'));
         return  \Redirect::intended($logoutUrl);
     }
+
+    public function profile()
+    {
+        if (!Auth::check()) {
+            return redirect()->route('login');
+        }
+
+        return view('profile')->with(
+            'user',
+            print_r(Auth::user()->getUserInfo(), true)
+        );
+    }
 }
