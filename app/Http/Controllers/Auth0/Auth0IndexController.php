@@ -20,7 +20,7 @@ class Auth0IndexController extends Controller
             // 'audience' => config('laravel-auth0.api_identifier'),
         ];
         $app = new App();
-        return app()->make('auth0')->login(null, null, $authorize_params);
+        return $app->make('auth0')->login(null, null, $authorize_params);
     }
 
     /**
